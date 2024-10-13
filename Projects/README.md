@@ -7,8 +7,6 @@ Bu proje, C# dilinde yazılmış basit bir konsol uygulamasıdır. Kullanıcıya
 2. **Hesap Makinesi**
 3. **Ortalama Hesaplama**
 
-Her bir program, belirli bir işlevi yerine getirir ve kullanıcıdan girdi alarak bu girdiler üzerinde işlem yapar. Proje, temel programlama kavramlarını (kullanıcı girdisi, koşul ifadeleri, döngüler ve hata kontrolü) uygulamalı olarak göstermeyi amaçlar.
-
 ## Kullanılan Teknolojiler
 - **C#**: Uygulamanın geliştirilmesi için kullanılan programlama dili.
 - **.NET Konsol Uygulaması**: Uygulamanın inşa edilip çalıştırıldığı platform.
@@ -56,8 +54,6 @@ This project is a C# console application that allows users to choose between thr
 1. **Random Number Guessing Game**
 2. **Calculator**
 3. **Grade Average Calculator**
-
-Each program is implemented as a separate method in the code and can be accessed via a simple main menu.
 
 ## How to Run the Project
 1. Clone or download this repository.
