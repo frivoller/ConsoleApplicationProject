@@ -48,40 +48,40 @@ Her bir program, belirli bir işlevi yerine getirir ve kullanıcıdan girdi alar
 - Ortalama hesaplanır ve ortalamaya karşılık gelen harf notu ekranda gösterilir (örn. 90-100: AA, 85-89: BA, vb.).
 - Geçersiz not girildiğinde hata mesajı görüntülenir ve program sonlandırılır.
 
-## Ek Bilgiler
-Bu proje, C# dilinde konsol uygulamaları geliştirmenin temel prensiplerini öğretmek amacıyla oluşturulmuştur. Her bir program, kullanıcının girdilerini alır ve bu girdilere göre uygun işlemleri gerçekleştirir. Aynı zamanda hata kontrolleri yaparak kullanıcının yanlış giriş yapması durumunda uygun geri bildirimler verir.
-
 # Console Application Project
 
 ## Overview
-This project is a simple console application written in C#. It allows users to choose between three different programs and interact with them via the console. The programs included in this project are:
+This project is a C# console application that allows users to choose between three different programs:
 
 1. **Random Number Guessing Game**
 2. **Calculator**
 3. **Grade Average Calculator**
 
-Each program performs a specific task and allows the user to provide input through the console. The goal of the project is to demonstrate basic programming concepts such as user input, conditionals, loops, and error handling.
-
-## Technologies Used
-- **C#**: The programming language used to develop the application.
-- **.NET Console Application**: The platform for building and running the application.
-- **Visual Studio**: Recommended IDE for development and testing.
+Each program is implemented as a separate method in the code and can be accessed via a simple main menu.
 
 ## How to Run the Project
-1. **Clone the repository**: Download or clone the project repository to your local machine.
-2. **Open in Visual Studio**: Open the project in Visual Studio or another C# compatible IDE.
-3. **Run the project**: Compile and run the application from the IDE.
-4. **Follow the instructions**: The application will prompt you to choose between three different programs:
-   - **Random Number Guessing Game**: Try to guess the randomly generated number.
-   - **Calculator**: Perform basic arithmetic operations (addition, subtraction, multiplication, division).
-   - **Grade Average Calculator**: Enter exam grades and calculate the average with corresponding letter grades.
+1. Clone or download this repository.
+2. Open the project in an IDE that supports C#, such as Visual Studio.
+3. Build and run the project.
+4. Follow the on-screen instructions to select a program and interact with it.
 
-## Project Structure
-- `Main()` method presents a menu where the user can select one of the three programs.
-- Each program is encapsulated in its own method (`RastgeleSayiOyunu`, `HesapMakinesi`, `OrtalamaHesaplama`).
-- The project uses basic control structures like loops (`while`), conditional statements (`if`, `else`, `switch`), and user input validation.
-
-## Programs Overview
-
+## Project Features
 ### 1. Random Number Guessing Game
-- A random number between 1 and 100 is generated.
+- The program selects a random number between 1 and 100.
+- The user has 5 attempts to guess the number, receiving hints whether the guess is too high or too low.
+- If the user guesses correctly, they are congratulated. If all attempts are used, the correct number is shown.
+
+### 2. Calculator
+- The user inputs two numbers and selects an operation (`+`, `-`, `*`, `/`).
+- The program performs the calculation and displays the result.
+- Division by zero is handled with an appropriate error message.
+
+### 3. Grade Average Calculator
+- The user inputs three exam grades.
+- The program calculates the average and displays the corresponding letter grade.
+- The grade scale is based on a range from 0-100, and invalid grades outside this range are rejected.
+
+## Technologies Used
+- **C#**
+- **.NET Core** or **.NET Framework**
+- **Visual Studio** (for development)
