@@ -33,17 +33,17 @@ namespace UygulamaProjesi
         static void RastgeleSayiOyunu() 
         {
             Random rastgele = new Random();
-            int sayi = rastgele.Next(1, 101); // 1 ile 100 arasında bir sayı
+            int sayi = rastgele.Next(1, 101); // 1 ile 100 arasinda bir sayi
             int tahmin;
             int hak = 5;
 
             Console.WriteLine("Bilgisayar 1 ile 100 arasında bir sayı seçti. Bu sayıyı tahmin etmeye çalışın.");
 
-            while (hak > 0) //kullanicinin tahmin yapması icin dongu
+            while (hak > 0) //kullanicinin tahmin yapmasi icin dongu
             {
                 Console.Write("Tahmininizi girin: ");
                 tahmin = Convert.ToInt32(Console.ReadLine());
-                hak--; // her tahminde hak bir azalir
+                hak--; // her tahminde bir hak azalir
 
                 if (tahmin == sayi)
                 {
