@@ -39,11 +39,11 @@ namespace UygulamaProjesi
 
             Console.WriteLine("Bilgisayar 1 ile 100 arasında bir sayı seçti. Bu sayıyı tahmin etmeye çalışın.");
 
-            while (hak > 0)
+            while (hak > 0) //kullanicinin tahmin yapması icin dongu
             {
                 Console.Write("Tahmininizi girin: ");
                 tahmin = Convert.ToInt32(Console.ReadLine());
-                hak--;
+                hak--; // her tahminde hak bir azalir
 
                 if (tahmin == sayi)
                 {
@@ -125,7 +125,7 @@ namespace UygulamaProjesi
                 Console.Write($"{i + 1}. dersi notunu giriniz (0-100): ");
                 notlar[i] = Convert.ToDouble(Console.ReadLine());
 
-                if (notlar[i] < 0 || notlar[i] > 100)
+                if (notlar[i] < 0 || notlar[i] > 100) //notun gecerliligi
                 {
                     Console.WriteLine("Hatalı not girdiniz. Notlar 0 ile 100 arasında olmalıdır.");
                     return;
