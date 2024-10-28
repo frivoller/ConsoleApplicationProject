@@ -1,41 +1,45 @@
-# Hesap Makinesi / Calculator Application
+# Console Application Project
 
-## Açıklama
-Bu basit C# programı, kullanıcının iki sayı girip, bu sayılar üzerinde toplama, çıkarma, çarpma veya bölme işlemlerini yapmasını sağlar. Bölme işlemi için sıfıra bölme hatası kontrolü yapılmaktadır.
+## Overview
+This project is a C# console application that allows users to choose between three different programs:
 
-## Kullanılan Teknolojiler
-C#: Programlama dili olarak kullanıldı.
-.NET Core veya .NET Framework: C# uygulamalarının çalıştırılabilmesi için gerekli platform.
-Visual Studio (veya Visual Studio Code): IDE olarak kullanılabilir.
+1. **Random Number Guessing Game**
+2. **Calculator**
+3. **Grade Average Calculator**
 
-## Özellikler
-Kullanıcıdan iki sayı girişi alınır.
-Toplama, çıkarma, çarpma ve bölme işlemleri yapılabilir.
-Bölme işlemi yapılırken sıfıra bölme hatası kontrol edilir ve kullanıcıya uygun bir mesaj gösterilir.
+Each program is implemented as a separate method in the code and can be accessed via a simple main menu.
 
-## Kullanım
-Program başlatıldığında, kullanıcıdan ilk sayıyı girmesi istenir.
-İkinci sayı kullanıcıdan istenir.
-Kullanıcı, yapmak istediği işlemi (+, -, *, /) seçer.
-Seçilen işleme göre sonuç ekrana yazdırılır.
-Eğer bölme işlemi yapılırken ikinci sayı sıfır ise, "Sıfıra bölme yapılamaz" uyarısı ekrana gelir.
+## How to Run the Project
+1. Clone or download this repository.
+2. Open the project in an IDE that supports C#, such as Visual Studio.
+3. Build and run the project.
+4. Follow the on-screen instructions to select a program and interact with it.
 
-## Description
-This simple C# program allows the user to input two numbers and perform addition, subtraction, multiplication, or division on them. The program checks for division by zero during division operations and provides a suitable message if necessary.
+## Project Features
+### 1. Random Number Guessing Game
+- The program selects a random number between 1 and 100.
+- The user has 5 attempts to guess the number, receiving hints whether the guess is too high or too low.
+- If the user guesses correctly, they are congratulated. If all attempts are used, the correct number is shown.
+
+### 2. Calculator
+- The user inputs two numbers and selects an operation (`+`, `-`, `*`, `/`).
+- The program performs the calculation and displays the result.
+- Division by zero is handled with an appropriate error message.
+
+### 3. Grade Average Calculator
+- The user inputs three exam grades.
+- The program calculates the average and displays the corresponding letter grade.
+- The grade scale is based on a range from 0-100, and invalid grades outside this range are rejected.
 
 ## Technologies Used
-C#: Used as the programming language.
-.NET Core or .NET Framework: Required platform for running C# applications.
-Visual Studio (or Visual Studio Code): Can be used as the IDE.
+- **C#**
+- **.NET Core** or **.NET Framework**
+- **Visual Studio** (for development)
 
-## Features
-The user inputs two numbers.
-Addition, subtraction, multiplication, and division operations are supported.
-The program checks for division by zero and displays a relevant error message.
-
-## Usage
-When the program starts, the user is prompted to enter the first number.
-The second number is then requested.
-The user selects the desired operation (+, -, *, /).
-The result of the operation is displayed based on the user's choice.
-If the division operation is selected and the second number is zero, an error message "Division by zero is not allowed" is shown.
+## Additional Information
+This project is intended for beginners to practice basic C# concepts such as:
+- Conditional statements (`if`, `switch`)
+- Loops (`while`, `for`)
+- Input validation
+- Random number generation
+- Arithmetic operations
